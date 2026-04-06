@@ -1,0 +1,41 @@
+.wrap {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition:
+    filter 0.45s ease,
+    opacity 0.35s ease,
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.imgLoading {
+  filter: blur(14px);
+  transform: scale(1.04);
+  opacity: 0.88;
+}
+
+.imgLoaded {
+  filter: none;
+  transform: none;
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .img {
+    transition: opacity 0.2s ease;
+  }
+
+  .imgLoading {
+    filter: none;
+    transform: none;
+  }
+}

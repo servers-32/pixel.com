@@ -1,0 +1,165 @@
+.root {
+  position: fixed;
+  inset: 0;
+  z-index: 220;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.modal {
+  position: relative;
+  z-index: 1;
+  width: min(26rem, 100%);
+  padding: 1.25rem 1.35rem 1.35rem;
+  border-radius: 0.65rem;
+  background: var(--surface-elevated);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-float);
+}
+
+.head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-strong);
+}
+
+.close {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 0.35rem;
+  background: var(--surface-muted);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--text-strong);
+}
+
+.close:hover {
+  background: var(--surface-hover);
+}
+
+.product {
+  margin: 0 0 0.35rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.priceLine {
+  margin: 0 0 0.65rem;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.priceLine strong {
+  color: var(--accent);
+}
+
+.hint {
+  margin: 0 0 1rem;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  margin-bottom: 1rem;
+}
+
+.table th,
+.table td {
+  padding: 0.55rem 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.table th {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.em {
+  font-weight: 800;
+  color: var(--text-strong);
+}
+
+.overpay {
+  display: inline-block;
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+  background: rgba(234, 179, 8, 0.18);
+  color: var(--text-strong);
+  font-weight: 800;
+  font-size: 0.78rem;
+}
+
+.note {
+  margin: 0 0 1rem;
+  font-size: 0.75rem;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ok {
+  width: 100%;
+  padding: 0.65rem;
+  border: none;
+  border-radius: 0.35rem;
+  background: var(--surface-muted);
+  color: var(--text-strong);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid var(--border);
+}
+
+.ok:hover {
+  background: var(--surface-hover);
+}
+
+.checkout {
+  width: 100%;
+  padding: 0.65rem;
+  border: none;
+  border-radius: 0.35rem;
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.checkout:hover {
+  filter: brightness(1.05);
+}

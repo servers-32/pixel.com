@@ -1,0 +1,354 @@
+.headerAccount {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.02rem;
+}
+
+.headerAccountLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.2rem;
+  min-width: 2.35rem;
+  padding: 0.2rem 0.25rem 0.2rem 0.35rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  font: inherit;
+  font-size: 0.68rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--text-muted);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.headerAccountLink:hover {
+  color: var(--text-strong);
+  background: var(--surface-hover);
+}
+
+.headerMenuChevron {
+  flex-shrink: 0;
+  width: 1.35rem;
+  height: 1.65rem;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0.45rem;
+  background: transparent;
+  font-size: 0.72rem;
+  line-height: 1;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.headerMenuChevron:hover {
+  color: var(--text-strong);
+  background: var(--surface-hover);
+}
+
+.headerNavItem,
+.headerNavItemTrigger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.2rem;
+  min-width: 2.75rem;
+  padding: 0.2rem 0.35rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: transparent;
+  font: inherit;
+  font-size: 0.68rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--text-muted);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.headerNavItem:hover,
+.headerNavItemTrigger:hover {
+  color: var(--text-strong);
+  background: var(--surface-hover);
+}
+
+.headerNavIcon {
+  display: grid;
+  place-items: center;
+  width: 1.45rem;
+  height: 1.45rem;
+  color: var(--text-strong);
+}
+
+.headerNavIcon svg {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.headerNavLabel {
+  max-width: 4.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: inherit;
+}
+
+.headerAccountLink .avatarWrap {
+  position: relative;
+}
+
+.headerAccountLink .avatar {
+  width: 1.45rem;
+  height: 1.45rem;
+  font-size: 0.72rem;
+}
+
+.headerWrap {
+  position: relative;
+}
+
+@media (max-width: 639px) {
+  .headerNavLabel {
+    display: none;
+  }
+
+  .headerNavItem,
+  .headerNavItemTrigger,
+  .headerAccountLink {
+    min-width: 2.35rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+}
+
+.guest {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btnIcon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.btnIcon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.loginBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-strong);
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.loginBtn:hover {
+  border-color: var(--accent-border);
+  box-shadow: var(--shadow-card);
+}
+
+.regBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: none;
+  background: var(--accent-soft);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.regBtn .btnIcon {
+  color: var(--accent);
+}
+
+.regBtn:hover {
+  filter: brightness(1.05);
+}
+
+.wrap {
+  position: relative;
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.55rem 0.3rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  font: inherit;
+  cursor: pointer;
+  color: var(--text-strong);
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.userGlyph {
+  display: grid;
+  place-items: center;
+  width: 1.15rem;
+  height: 1.15rem;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.userGlyph svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 480px) {
+  .userGlyph {
+    display: none;
+  }
+}
+
+.avatarWrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.trigger:hover {
+  border-color: var(--accent-border);
+  box-shadow: var(--shadow-card);
+}
+
+.avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent);
+  display: grid;
+  place-items: center;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.loyaltyDot {
+  position: absolute;
+  top: -0.2rem;
+  right: -0.35rem;
+  min-width: 1.05rem;
+  padding: 0.08rem 0.28rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.58rem;
+  font-weight: 800;
+  line-height: 1.1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+
+.name {
+  max-width: 6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.chev {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.35rem);
+  min-width: 11rem;
+  padding: 0.35rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+  background: var(--surface-elevated);
+  box-shadow: var(--shadow-float);
+  z-index: 80;
+  animation: menuIn 0.2s ease;
+}
+
+@keyframes menuIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.item,
+.itemMuted {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.55rem 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: none;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-strong);
+  cursor: pointer;
+}
+
+.item:hover {
+  background: var(--surface-hover);
+}
+
+a.item {
+  text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+}
+
+.itemMuted {
+  color: #dc2626;
+  font-weight: 700;
+  margin-top: 0.25rem;
+  border-top: 1px solid var(--border);
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.itemMuted:hover {
+  background: rgba(220, 38, 38, 0.06);
+}
+
+@media (max-width: 720px) {
+  .name {
+    display: none;
+  }
+}

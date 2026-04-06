@@ -1,0 +1,119 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg, 1rem);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  height: 100%;
+  min-height: 18rem;
+}
+
+.imageBlock {
+  padding: 0.875rem 0.875rem 0;
+  background: linear-gradient(
+    165deg,
+    var(--surface-muted) 0%,
+    color-mix(in srgb, var(--surface-elevated) 88%, var(--surface-muted)) 100%
+  );
+}
+
+.imagePh {
+  aspect-ratio: 1;
+  border-radius: 0.7rem;
+  background: var(--surface-muted);
+}
+
+.body {
+  padding: 0.75rem 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.lineSm {
+  height: 0.65rem;
+  width: 38%;
+  border-radius: 0.25rem;
+}
+
+.lineLg {
+  height: 0.95rem;
+  width: 92%;
+  border-radius: 0.3rem;
+}
+
+.lineMd {
+  height: 0.95rem;
+  width: 72%;
+  border-radius: 0.3rem;
+}
+
+.specBlock {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.4rem;
+  align-content: flex-start;
+  min-height: 5.35rem;
+  margin-top: 0.2rem;
+}
+
+.specChip {
+  height: 1.15rem;
+  width: 4.25rem;
+  border-radius: 0.35rem;
+}
+
+.ratingLine {
+  height: 0.76rem;
+  width: 42%;
+  border-radius: 0.25rem;
+  margin-top: 0.15rem;
+}
+
+.footer {
+  padding: 0.65rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-top: auto;
+}
+
+.btnPh {
+  height: var(--control-height, 2.625rem);
+  border-radius: 0.65rem;
+}
+
+.btnGhost {
+  height: 2.25rem;
+  border-radius: 0.55rem;
+}
+
+.ph {
+  background: linear-gradient(
+    105deg,
+    var(--surface-muted) 0%,
+    color-mix(in srgb, var(--surface-elevated) 55%, var(--border)) 45%,
+    var(--surface-muted) 100%
+  );
+  background-size: 200% 100%;
+  animation: skeletonShimmer 1.15s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ph {
+    animation: none;
+    opacity: 0.92;
+  }
+}
+
+@keyframes skeletonShimmer {
+  0% {
+    background-position: 120% 0;
+  }
+  100% {
+    background-position: -120% 0;
+  }
+}

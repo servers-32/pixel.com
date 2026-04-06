@@ -1,0 +1,147 @@
+.box {
+  margin-top: 1rem;
+  padding: 1rem 1.1rem;
+  border-radius: 0.85rem;
+  border: 1px solid var(--border);
+  background: linear-gradient(135deg, var(--surface-elevated) 0%, var(--surface) 100%);
+  box-shadow: var(--shadow-card);
+}
+
+.box.compact {
+  margin-top: 0.75rem;
+  padding: 0.75rem 0.85rem;
+  font-size: 0.92rem;
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.title {
+  font-weight: 800;
+  color: var(--text-strong);
+  font-size: 1rem;
+}
+
+.compact .title {
+  font-size: 0.95rem;
+}
+
+.balance {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.rule {
+  margin: 0 0 0.75rem;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+
+.hint {
+  margin: 0 0 0.75rem;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.link {
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.linkMuted {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.linkMuted:hover {
+  color: var(--accent);
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.row label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-strong);
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 4.5rem;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.controls input[type='range'] {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+.num {
+  padding: 0.35rem 0.45rem;
+  border-radius: 0.45rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-strong);
+  font: inherit;
+  font-weight: 700;
+  text-align: center;
+}
+
+.maxBtn {
+  width: 100%;
+  margin-bottom: 0.35rem;
+  padding: 0.4rem 0.65rem;
+  border: 1px dashed var(--border);
+  border-radius: 0.55rem;
+  background: transparent;
+  color: var(--text-muted);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.maxBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.discountLine {
+  margin-top: 0.35rem;
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+.muted {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}

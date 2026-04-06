@@ -1,0 +1,70 @@
+.img {
+  height: 1.5rem;
+  width: auto;
+  max-width: 4.75rem;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+}
+
+.imgStrip {
+  height: 2.5rem;
+  width: auto;
+  max-width: 10.5rem;
+  min-width: 4rem;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+}
+
+/** Локальные одноцветные SVG — читаемость в тёмной теме без поломки цветных CDN-иконок */
+.imgStripLocal {
+  max-width: 9.75rem;
+}
+
+[data-theme='dark'] .imgStripLocal {
+  opacity: 0.94;
+  filter: brightness(0) invert(1);
+}
+
+.fallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.25rem;
+  height: 2.25rem;
+  padding: 0 0.35rem;
+  border-radius: 0.45rem;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent-deep) 0%, var(--accent) 55%, var(--accent-2) 100%);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.12);
+  flex-shrink: 0;
+}
+
+[data-theme='dark'] .fallback {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+.fallbackStrip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.25rem;
+  min-height: 2.85rem;
+  padding: 0 0.5rem;
+  border-radius: 0.55rem;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent-deep) 0%, var(--accent) 55%, var(--accent-2) 100%);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.1);
+  flex-shrink: 0;
+}
+
+[data-theme='dark'] .fallbackStrip {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}

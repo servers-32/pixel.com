@@ -1,0 +1,43 @@
+.wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  vertical-align: middle;
+}
+
+.sm .star {
+  font-size: 0.78rem;
+}
+
+.md .star {
+  font-size: 0.95rem;
+}
+
+.star {
+  position: relative;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+}
+
+.bg {
+  color: var(--star-empty);
+  opacity: 0.35;
+}
+
+.fg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  color: var(--star-fill);
+  white-space: nowrap;
+}
+
+.num {
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--text-muted);
+}

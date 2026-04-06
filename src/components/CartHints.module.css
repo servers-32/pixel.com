@@ -1,0 +1,52 @@
+.box {
+  padding: 1rem 1.1rem;
+  border-radius: 0.85rem;
+  border: 1px solid var(--border);
+  background: var(--surface-muted);
+  margin-bottom: 1rem;
+}
+
+.hint,
+.hintMuted,
+.ok,
+.discountOk {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.hint {
+  color: var(--text);
+}
+
+.hintMuted {
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+.ok {
+  color: var(--ok-text);
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.discountOk {
+  color: var(--cta-text);
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 0.65rem;
+}
+
+.bar {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--border);
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  transition: width 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}

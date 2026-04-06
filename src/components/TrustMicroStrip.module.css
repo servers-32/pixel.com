@@ -1,0 +1,32 @@
+.list,
+.listCompact {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.85rem;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: var(--text-muted);
+}
+
+.listCompact {
+  justify-content: center;
+  text-align: center;
+  margin-top: 0.65rem;
+}
+
+.item {
+  position: relative;
+  padding-left: 0.95rem;
+}
+
+.item::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  font-size: 0.65rem;
+  color: var(--ok-text);
+  font-weight: 800;
+}

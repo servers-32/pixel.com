@@ -1,0 +1,9 @@
+.wrap {
+  max-width: 32rem;
+  margin: 2rem auto;
+  padding: 1rem var(--page-gutter) 2.5rem;
+}
+
+.titleMerge {
+  font-size: 1.2rem;
+}

@@ -1,0 +1,81 @@
+.wrap {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-5);
+  padding: var(--space-8) var(--page-gutter);
+}
+
+.card {
+  width: min(100%, 28rem);
+  padding: var(--space-5);
+  border-radius: var(--radius-xl);
+  border: 1px solid color-mix(in srgb, var(--border) 85%, var(--accent) 15%);
+  background: var(--surface-elevated);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.hero {
+  height: 10rem;
+  border-radius: var(--radius-md);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+
+.block {
+  height: 4rem;
+  border-radius: 0.5rem;
+}
+
+.line {
+  height: 0.85rem;
+  border-radius: 0.35rem;
+}
+
+.lineShort {
+  height: 0.85rem;
+  width: 62%;
+  border-radius: 0.35rem;
+}
+
+.shimmer {
+  background: linear-gradient(
+    105deg,
+    var(--surface-muted) 0%,
+    color-mix(in srgb, var(--surface-elevated) 50%, var(--border)) 45%,
+    var(--surface-muted) 100%
+  );
+  background-size: 200% 100%;
+  animation: routeShimmer 1.1s ease-in-out infinite;
+}
+
+.text {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+@keyframes routeShimmer {
+  0% {
+    background-position: 120% 0;
+  }
+  100% {
+    background-position: -120% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shimmer {
+    animation: none;
+    opacity: 0.88;
+  }
+}

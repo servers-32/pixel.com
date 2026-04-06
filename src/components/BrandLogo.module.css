@@ -1,0 +1,39 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  line-height: 0;
+}
+
+.mark {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.35rem;
+  max-width: 11rem;
+}
+
+.drawer .mark {
+  min-height: 2rem;
+  max-width: 9rem;
+}
+
+.footer .mark {
+  min-height: 1.75rem;
+  max-width: 8rem;
+  opacity: 0.95;
+}
+
+.link:hover .mark {
+  opacity: 0.9;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .link:hover .mark {
+    filter: brightness(1.04);
+  }
+}
+
+[data-theme='dark'] .footer .mark {
+  opacity: 0.92;
+}

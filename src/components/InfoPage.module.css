@@ -1,0 +1,33 @@
+.wrap {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.5rem var(--page-gutter) 3rem;
+}
+
+.title {
+  margin: 0 0 1.25rem;
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: var(--text-strong);
+}
+
+.prose {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text);
+}
+
+.prose p {
+  margin: 0 0 1rem;
+}
+
+.prose a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.prose a:hover {
+  text-decoration: underline;
+}

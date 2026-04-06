@@ -1,0 +1,220 @@
+.wrap {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: clamp(1.25rem, 3vw, 1.75rem) var(--page-gutter);
+}
+
+.title {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.35rem, 2.4vw, 1.65rem);
+  font-weight: 800;
+  color: var(--text-strong);
+}
+
+.subtitle {
+  margin: 0 0 1.5rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  max-width: 40rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11.5rem, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat {
+  background: var(--surface-elevated);
+  border: 1px solid var(--border);
+  border-radius: 0.85rem;
+  padding: 1rem 1rem 0.85rem;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 0;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.stat:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.statTop {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  min-height: 2.5rem;
+}
+
+.statLabel {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.statValueRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(4.5rem, 38%);
+  gap: 0.65rem;
+  align-items: end;
+}
+
+.statValue {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--text-strong);
+  line-height: 1.05;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  padding-bottom: 0.1rem;
+}
+
+.trendUp,
+.trendDown,
+.trendFlat,
+.trendMuted {
+  font-size: 0.65rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.trendUp {
+  color: var(--ok-text);
+}
+
+.trendDown {
+  color: #b91c1c;
+}
+
+[data-theme='dark'] .trendDown {
+  color: #f87171;
+}
+
+.trendFlat {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.trendMuted {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.spark {
+  width: 100%;
+  min-height: 40px;
+  opacity: 0.95;
+}
+
+.sparkEmpty {
+  font-size: 0.62rem;
+  color: var(--text-muted);
+  text-align: right;
+  padding: 0.35rem 0 0;
+  min-height: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.sparkPlaceholder {
+  min-height: 40px;
+}
+
+.chartBlock {
+  background: var(--surface-elevated);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.1rem 1.1rem 0.75rem;
+  margin-bottom: 1.1rem;
+  box-shadow: var(--shadow-card);
+}
+
+.chartHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.65rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.chartTitle {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text-strong);
+  margin: 0;
+}
+
+.chartTitleOnly {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text-strong);
+  margin: 0 0 0.65rem;
+}
+
+.chartLegendBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  align-items: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.legendSwatch {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 0.15rem;
+  flex-shrink: 0;
+}
+
+.chartCanvas {
+  width: 100%;
+  height: 280px;
+}
+
+.chartCanvasTall {
+  width: 100%;
+}
+
+.note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 520px) {
+  .statValueRow {
+    grid-template-columns: 1fr;
+  }
+
+  .spark {
+    max-width: 12rem;
+    margin-left: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stat:hover {
+    transform: none;
+  }
+}
