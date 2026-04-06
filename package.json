@@ -4,15 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "dev": "vite",
-  "build": "tsc -b && vite build",
-  "build:gh": "tsc -b && vite build && node scripts/gh-pages-404.mjs",
-  "lint": "eslint .",
-  "preview": "vite preview",
-  "seed:db": "cd server && npm run seed",
-  "predeploy": "npm run build:gh",
-  "deploy": "gh-pages -d dist"
-}
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:gh": "tsc -b && vite build && node scripts/gh-pages-404.mjs",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "seed:db": "cd server && npm run seed",
+    "predeploy": "npm run build:gh",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
