@@ -2,18 +2,11 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
-export default defineConfig({
-  plugins: [react()],
-  base: '/pixel.com/' // <--- важно для GitHub Pages
-})
+// Берём base для GitHub Pages
+const base = process.env.VITE_BASE?.trim() || '/pixel.com/'
 
-// Деплой не в корень (GitHub Pages: /repo-name/): задайте VITE_BASE=/repo-name/ при сборке
-// https://vite.dev/config/shared-options.html#base
-const base = process.env.VITE_BASE?.trim() || '/'
-
-// https://vite.dev/config/
 export default defineConfig({
-  base,
+  base, // важно для GitHub Pages
   plugins: [
     react(),
     VitePWA({
