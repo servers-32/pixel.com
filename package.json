@@ -2,6 +2,7 @@
   "name": "electronics-shop",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://servers-32.github.io/pixel.com"
   "type": "module",
   "scripts": {
     "dev": "vite",
