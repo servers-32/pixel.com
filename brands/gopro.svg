@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" fill="none" aria-hidden="true">
+  <rect x="6" y="10" width="22" height="20" rx="3" stroke="#1e293b" stroke-width="2" fill="none"/>
+  <circle cx="17" cy="20" r="4" fill="#1e293b"/>
+  <text x="36" y="26" font-family="system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13" font-weight="800" fill="#1e293b">GoPro</text>
+</svg>

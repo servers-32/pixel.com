@@ -1,0 +1,1 @@
+import{r as e}from"./rolldown-runtime-Dw2cE7zH.js";import{d as t}from"./recharts-BmlC3ll-.js";var n=e(t(),1),r=(0,n.createContext)(null);function i(){let e=(0,n.useContext)(r);if(!e)throw Error(`useShop must be used within ShopProvider`);return e}export{r as n,i as t};
